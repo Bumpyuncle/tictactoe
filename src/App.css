@@ -1,0 +1,77 @@
+body, html, #root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center; 
+  align-items: center;     
+  background-color: white; 
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.game {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  grid-template-rows: repeat(3, 100px);
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+
+.square {
+  width: 100px;
+  height: 100px;
+  font-size: 2.5rem;   
+  font-weight: bold;
+  border: 2px solid black;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;        
+  background: white;
+  transition: background 0.3s;
+}
+
+
+.square:hover {
+  background: #f0f0f0;
+}
+
+
+button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  font-weight: bold;
+  background: #e4208c;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background: #9607b9;
+}
+
+
+.winner {
+  margin-top: 15px;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
